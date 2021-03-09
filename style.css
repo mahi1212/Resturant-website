@@ -1,0 +1,396 @@
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+
+    /*
+font-family: 'Montserrat', sans-serif;*/
+
+}
+
+.row{
+    width: 100%;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+
+[class*="col-"]{
+    width: 100%;
+}
+
+/* header starts here */
+
+header{
+    background-color: cadetblue;
+    text-align: center;
+    padding: 0 1%;
+}
+
+.logo{
+    color: white;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 2%;
+}
+
+.nav ul li{
+    display: block;
+}
+
+.nav ul li a{
+    padding: 0 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(32, 110, 112);
+    margin: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.2s;
+}
+
+
+.nav ul li a:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: 5px;
+}
+/* header ends here */
+
+/* banner starts here */
+
+#banner{
+    background-image: url("images/food2.jpg");
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-contant{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-contant h2{
+    width: 100%;
+    margin-top: 40px;
+    margin: 15px auto;
+    word-spacing: 5px;
+    font-size: 3rem;
+    background-color: rgb(236, 186, 58);
+    border-radius: 10px;
+    padding:15px;
+    font-family: 'Handlee', cursive;
+}
+
+.banner-contant p{
+    width: 300px;
+    margin:15px auto;
+    background-color:darkgreen;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+
+.btn{
+    width: 160px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(41, 43, 87);
+    transition: 0.2s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/* banner ends here */
+
+/*About us starts here */
+#about-us{
+    padding: 1%;
+}
+
+.about-us-contant{
+    text-align: center;
+}
+
+.about-us-contant h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.about-us-contant p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+/*About us ends here */
+/*Food menu starts here */
+
+#menu-section{
+    padding: 1%;
+}
+
+.card{
+    text-align: center;
+}
+
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item-desc{
+    background-color: gray;
+}
+
+.item-desc h4{
+    background: green;
+    font-size: 1.8rem;
+    color: white;
+    padding: 10px;
+    height: 80px;
+}
+
+.item-desc > p{
+    height: 70px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.card{
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+/*Food menu ends here */
+
+/* contact starts here */
+
+#contact{
+    padding: 1%;
+    background-color: rgb(24, 34, 70);
+}
+
+#contact .row{
+    padding: 5px 7px;
+}
+
+.contact-details{
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.map{
+    width: 100%;
+    transition: 0.2s;
+}
+
+.map:hover{
+    transform: scale(1.1);
+}
+.contact-details > p address{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+}
+
+
+/* contact ends here */
+
+/* Foter starts here */
+footer{
+    padding: 1%;
+    color: white;
+    background-color: #060930;
+}
+
+footer p{
+    line-height: 40px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.social-menu{
+    text-align: center;
+}
+
+.icon-style{
+    color:white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+    transition: .3s;
+}
+
+.icon-style:hover{
+    background-color: gray;
+    transform: scale(1.2);
+}
+
+/* Footer ends here */
+
+
+/* For mobile phones:for small device */ 
+
+@media only screen and (min-width: 576px) {
+    /* For mobile: */
+    .col-sd-1 {width: 8.33%;}
+    .col-sd-2 {width: 16.66%;}
+    .col-sd-3 {width: 25%;}
+    .col-sd-4 {width: 33.33%;}
+    .col-sd-5 {width: 41.66%;}
+    .col-sd-6 {width: 50%;}
+    .col-sd-7 {width: 58.33%;}
+    .col-sd-8 {width: 66.66%;}
+    .col-sd-9 {width: 75%;}
+    .col-sd-10 {width: 83.33%;}
+    .col-sd-11 {width: 91.66%;}
+    .col-sd-12 {width: 100%;}
+  }
+
+/* for medium device */
+  @media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+  }
+
+  /* for large device */
+  @media only screen and (min-width: 992px) {
+
+    /* nav start */
+    .logo-div{
+        text-align: left;
+    }
+
+    .logo{
+        margin-top: 10px;
+    }
+
+    .nav ul{
+        text-align: right;
+    }
+
+    .nav ul li{
+        display: inline-block;
+    }
+
+
+    .nav ul li a{
+        display: inline-block;
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .nav ul li a:hover{
+        transform: scale(1.2);
+    }
+
+    /* nav end */
+    /* banner start */
+
+    #banner{
+        position: relative;
+        height: 100vh;
+    }
+
+    .banner-contant{
+        position:absolute;
+       top:50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+
+    .banner-contant h2{
+        width: 700px;
+        font-size: 3.5rem;
+    }
+
+    .banner-contant p{
+        width: 500px;
+        font-size: 2rem;
+    }
+
+    /* banner ends */
+    /* footer start */
+    
+    footer p{
+        text-align: left;
+    }
+
+    footer .social-menu{
+        text-align: right;
+    }
+    
+    
+    /* footer ends */
+
+
+    .col-ld-1 {width: 8.33%;}
+    .col-ld-2 {width: 16.66%;}
+    .col-ld-3 {width: 25%;}
+    .col-ld-4 {width: 33.33%;}
+    .col-ld-5 {width: 41.66%;}
+    .col-ld-6 {width: 50%;}
+    .col-ld-7 {width: 58.33%;}
+    .col-ld-8 {width: 66.66%;}
+    .col-ld-9 {width: 75%;}
+    .col-ld-10 {width: 83.33%;}
+    .col-ld-11 {width: 91.66%;}
+    .col-ld-12 {width: 100%;}
+  }
